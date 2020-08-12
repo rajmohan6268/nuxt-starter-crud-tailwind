@@ -142,9 +142,15 @@
               <div class="flex flex-row items-center">
                 <div class="flex-1 text-right md:text-center">
                   <p class="font-bold text-blue-500">post:{{ post.id }}</p>
-                  <h5 class="font-bold uppercase text-gray-600">   <span class="font-extrabold text-xl flex-inline uppercase text-blue-600">Title :</span>{{ post.title }}</h5>
+                  <h5 class="font-bold uppercase text-gray-600">
+                    <span class="font-extrabold text-xl flex-inline uppercase text-blue-600">Title :</span>
+                    {{ post.title }}
+                  </h5>
                   <h3 class="font-bold text-2xl">
-                    <span class="font-extrabold text-xl flex-inline uppercase text-purple-600">post body :</span> {{ post.body }}
+                    <span
+                      class="font-extrabold text-xl flex-inline uppercase text-purple-600"
+                    >post body :</span>
+                    {{ post.body }}
                     <span class="text-green-500">
                       <i class="fas fa-caret-up">
                         <p class="font-bold">user:{{ post.userId }}</p>
@@ -153,6 +159,9 @@
                   </h3>
                 </div>
               </div>
+              <button
+                class="bg-white hover:bg-gray-100 text-gray-800 font-semibold py-2 px-4 border border-gray-400 rounded shadow"
+              >edit post</button>
             </div>
           </div>
         </div>
@@ -163,7 +172,7 @@
 <script>
 import PostDataService from "../services/PostDataService";
 export default {
- asyncData() {
+  asyncData() {
     return {
       post: {
         id: 0,
