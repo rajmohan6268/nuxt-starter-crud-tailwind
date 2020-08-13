@@ -24,6 +24,10 @@ class PostDataService {
   deleteAll() {
     return http.delete(`/posts`);
   }
+
+  findByTitle(title) {
+    return http.get(`/posts?title=${title}`);
+  }
 }
 
 export default new PostDataService();
