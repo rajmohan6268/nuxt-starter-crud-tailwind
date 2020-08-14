@@ -20,7 +20,7 @@ module.exports = {
     "vue/multiline-html-element-content-newline": "off",
     "quotes": "off",
     "quote-props": "off",
-    "semi": "on",
+    "semi": "off",
     "padded-blocks": "off",
     "space-before-function-paren": "off",
     "no-console": "off",
